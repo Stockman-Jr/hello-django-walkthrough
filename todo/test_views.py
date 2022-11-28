@@ -36,4 +36,3 @@ class TestViews(TestCase):
         response = response = self.client.get(f'/toggle/{item.id}')
         updated_item = Item.objects.get(id=item.id)
         self.assertFalse(updated_item.done)
-
